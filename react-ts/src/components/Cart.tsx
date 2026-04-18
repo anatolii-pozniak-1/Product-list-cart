@@ -18,7 +18,7 @@ export function Cart({ data, onRemove, onConfirmationClick }: CartListProps) {
             <h2 className="cart__title">Your Cart ({totalCount})</h2>
             {totalCount === 0 ? (
                 <div className="cart__empty">
-                    <img src="/assets/images/illustration-empty-cart.svg" alt="" />
+                    <img src="assets/images/illustration-empty-cart.svg" alt="" />
                     <p>Your added items will appear here</p>
                 </div>
             ) : (
@@ -48,7 +48,7 @@ function Product({ item, onRemove }: CartProps) {
                     <span className="cart-item__total">${(item.product.price * item.quantity).toFixed(2)}</span>
                 </p>
             </div>
-            <button className="cart-item__remove" onClick={() => onRemove(item.product.name)}><img src="/assets/images/icon-remove-item.svg" alt="Remove item" /></button>
+            <button className="cart-item__remove" onClick={() => onRemove(item.product.name)}><img src="assets/images/icon-remove-item.svg" alt="Remove item" /></button>
         </div>
     );
 }
@@ -65,7 +65,7 @@ function CardTotal({ data }: { data: CartItem[] }) {
 function Banner() {
     return (
         <div className="cart-banner">
-            <img src="/assets/images/icon-carbon-neutral.svg" alt="" />
+            <img src="assets/images/icon-carbon-neutral.svg" alt="" />
             <p>This is a <strong>carbon-neutral</strong> delivery</p>
         </div>
     );

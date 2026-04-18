@@ -32,7 +32,7 @@ export function ConfirmationModal({
             ref={dialogRef}
             className="confirmation-modal"
             aria-labelledby="confirmation-modal-title">
-            <img className="confirmation-modal__icon" src="/assets/images/icon-order-confirmed.svg" alt="" />
+            <img className="confirmation-modal__icon" src="assets/images/icon-order-confirmed.svg" alt="" />
             <h2>Order Confirmed</h2>
             <p>We hope you enjoy your food!</p>
             <div className="confirmation-modal__products">

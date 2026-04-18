@@ -33,7 +33,7 @@ export function ProductCard({ item, onIncreaseQuantity, onDecreaseQuantity }: Pr
 function ButtonDefault({ onIncreaseQuantity }: { onIncreaseQuantity: () => void }) {
     return (
         <button className="product-card__button product-card__button--default" onClick={onIncreaseQuantity}>
-            <img src={"/assets/images/icon-add-to-cart.svg"} /> Add to Cart
+            <img src={"assets/images/icon-add-to-cart.svg"} /> Add to Cart
         </button>
 
     );
@@ -46,14 +46,14 @@ function ButtonWithAction({ item, onIncreaseQuantity, onDecreaseQuantity }: Prod
             <button
                 className="product-card__quantity-button"
                 onClick={() => onDecreaseQuantity(item.product.name)}>
-                <img src={"/assets/images/icon-decrement-quantity.svg"} alt="" />
+                <img src={"assets/images/icon-decrement-quantity.svg"} alt="" />
             </button>
             {item.quantity}
 
             <button
                 className="product-card__quantity-button"
                 onClick={() => onIncreaseQuantity(item.product.name)}>
-                <img src={"/assets/images/icon-increment-quantity.svg"} alt="" />
+                <img src={"assets/images/icon-increment-quantity.svg"} alt="" />
             </button>
         </div>
     );
