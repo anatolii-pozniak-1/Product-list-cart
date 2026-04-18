@@ -97,7 +97,7 @@
 
 .product-card__quantity-button {
   width: 20px;
-  height: 20px;
+    height: 20px;
   border: 1px solid white;
   border-radius: 50%;
   display: grid;
